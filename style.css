@@ -1,87 +1,93 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.loadingImage{
-    display: block;
-    width: 20px;
-    animation: spin 1s infinite linear;
+.loadingImage {
+  display: block;
+  width: 20px;
+  animation: spin 1s infinite linear;
 }
-.form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 16px;
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 16px;
 }
-.wrapper{
-    width: 100%;
-    max-width: 264px;
-    position: relative;
+.wrapper {
+  width: 100%;
+  max-width: 264px;
+  position: relative;
 }
 
-.form-content-input{
-    width: 100%;
-    max-width: 264px;
-    padding: 0 3px;
-    height: 30px;
-    border-radius: 5px;
-    border: 1px solid #c9c9c9;
-    outline: 0;
+.form-content-input {
+  width: 100%;
+  max-width: 264px;
+  padding: 0 3px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #c9c9c9;
+  outline: 0;
 }
 .form-content-input.invalid,
 .form-content-textarea.invalid {
-    border: 1px solid red;
+  border: 1px solid red;
 }
-.form-content-textarea{
-    width: 100%;
-    max-width: 264px;
-    /* min-width: 220px; */
-    /* min-height: 30px; */
-    max-height: 100px;
-    outline: none;
-    resize: none;
-    padding: 3px;
-    border-radius: 5px;
-    margin-bottom: -4px;
-    border: 1px solid #c9c9c9
-}
-
-.input-content-wrapper{
-    margin-bottom: 12px;
-}
-.invalid-input-text{
-    color: red;
-    position: absolute ;
-    display: none;
-    font-size: 12px;
-    margin-left: 5px;
-    margin-bottom: 15px;
-
+.form-content-textarea {
+  width: 100%;
+  max-width: 264px;
+  /* min-width: 220px; */
+  /* min-height: 30px; */
+  max-height: 100px;
+  outline: none;
+  resize: none;
+  padding: 3px;
+  border-radius: 5px;
+  margin-bottom: -4px;
+  border: 1px solid #c9c9c9;
 }
 
-.invalid-input-text.active{
-    display: flex;
+.input-content-wrapper {
+  margin-bottom: 12px;
 }
-@keyframes spin{
-    from{
-        transform: rotate(0deg);
-    }
-    to{
-        transform: rotate(360deg);
-    }
+.invalid-input-text {
+  color: red;
+  position: absolute;
+  display: none;
+  font-size: 12px;
+  margin-left: 5px;
+  margin-bottom: 15px;
 }
-button{
-    cursor: pointer;
-    width: 100%;
-    max-width: 264px;
-    height: 30px;
-    border-radius: 5px;
-    border: 0;
-    background: rgb(29, 29, 59);
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5px;
+
+.invalid-input-text.active {
+  display: flex;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+button {
+  cursor: pointer;
+  width: 100%;
+  max-width: 264px;
+  height: 30px;
+  border-radius: 5px;
+  border: 0;
+  background: rgb(29, 29, 59);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+.successSend {
+  color: green;
+  display: none;
+}
+.successSend.valid {
+  display: flex;
 }
